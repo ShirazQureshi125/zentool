@@ -7,7 +7,13 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-const MediaCard = ({ title, image, description }) => {
+
+interface MediaCardProps {
+  title: string;
+  image: string; // Assuming image is a URL
+  description: string;
+}
+const MediaCard: React.FC<MediaCardProps> =({ title, image, description }) => {
   return (
     <Card
       sx={{
