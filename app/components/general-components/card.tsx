@@ -12,6 +12,7 @@ interface MediaCardProps {
   title: string;
   image: string; // Assuming image is a URL
   description: string;
+  style?: React.CSSProperties;
 }
 const MediaCard: React.FC<MediaCardProps> =({ title, image, description }) => {
   return (
